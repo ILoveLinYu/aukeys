@@ -24,7 +24,7 @@ public class ComparatorTest {
 		list.add(a3);
 		Apple a4=new Apple();
 		a4.setColor("gggg");
-//		a4.setWeight(10.2);
+		a4.setWeight(10.2);
 		/* Collections.sort(list, Comparator.comparing(Apple::getWeight)); 
 		 for(Apple a:list){
 			 System.out.println(a.getWeight()); 
