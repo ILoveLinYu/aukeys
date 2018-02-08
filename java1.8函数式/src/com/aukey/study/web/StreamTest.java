@@ -39,6 +39,7 @@ public class StreamTest {
 		List<Apple> doubleList=list.stream().peek(x -> {
 			x.setWeight(562.00);
 		}).collect(Collectors.toList());
+		
 		doubleList.stream().map(Apple::getWeight).forEach(System.out::println);
 	}
 }
