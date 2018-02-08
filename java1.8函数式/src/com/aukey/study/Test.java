@@ -71,10 +71,10 @@ public class Test {
 		for(Map.Entry<String, Object> entry:map.entrySet()){
 			System.out.println(entry.getKey()+"----"+entry.getValue());
 		}*/
-//		Apple a1=new Apple();
-//		a1.setColor("ºìÉ«");
-//		a1.setWeight(25);
-//		Apple a2=new Apple();
+		Apple a1=new Apple();
+		a1.setColor("ºìÉ«");
+		//a1.setWeight(25);
+		Apple a2=new Apple();
 		Map<String,Object> map=new TreeMap<String,Object>();
 		for(int i=0;i<=10000;i++){
 			map.put(i+"", i);
