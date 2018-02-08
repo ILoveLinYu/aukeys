@@ -15,36 +15,36 @@ public class Test {
 	public static void main(String[] args) {
 //		List<Apple> initList=new ArrayList<Apple>();
 //		Apple a1=new Apple();
-//		a1.setColor("ºìÉ«");
+//		a1.setColor("çº¢è‰²");
 //		a1.setWeight(25);
 //		initList.add(a1);
 //		Apple a2=new Apple();
-//		a2.setColor("ÂÌÉ«");
+//		a2.setColor("ç»¿è‰²");
 //		a2.setWeight(28);
 //		initList.add(a2);
 //		Apple a3=new Apple();
-//		a2.setColor("»ÆÉ«");
+//		a2.setColor("é»„è‰²");
 //		a2.setWeight(2);
 //		initList.add(a3);
 //		Apple a4=new Apple();
-//		a2.setColor("½ğÉ«");
+//		a2.setColor("é‡‘è‰²");
 //		a2.setWeight(8);
 //		initList.add(a4);
 		//String str="1,2,3,4";
 		//List<String> strList=Arrays.asList(str.split(","));
 		//List<Apple> resultList=new ArrayList<Apple>();
 		//List<String> colorList=new ArrayList<String>();
-		//Ñ­»·Ò»¸ölist»òÕßÆäËûÄÃÄãÒªµÄÖµ·Åµ½Ò»¸öĞÂµÄ¼¯ºÏ
+		//å¾ªç¯ä¸€ä¸ªlistæˆ–è€…å…¶ä»–æ‹¿ä½ è¦çš„å€¼æ”¾åˆ°ä¸€ä¸ªæ–°çš„é›†åˆ
 		//colorList=initList.parallelStream().filter((Apple a)-> a.getWeight()>26.00).map(Apple::getColor).collect(toList());
 		//System.out.println(colorList.size());
 	//Apple app=	initList.stream().max(Comparator.comparing((Apple a) -> a.getWeight())).get();
 	//System.out.println(app.getWeight());
-		//ÄäÃûÏß³Ì
+		//åŒ¿åçº¿ç¨‹
 		//Thread t=new Thread(() -> System.out.println("Hello world"));
 		//t.start();
 		//Integer a=19;
 		//Integer b=16;
-		//´óÓÚÔò·µ»Ø1£¬·ñÔò¾Í·µ»Ø-1
+		//å¤§äºåˆ™è¿”å›1ï¼Œå¦åˆ™å°±è¿”å›-1
 	    //System.out.println(a.compareTo(b));
 		/*
 		int y=0;
@@ -55,7 +55,7 @@ public class Test {
 			}
 		}
 		long endTime = System.currentTimeMillis();
-	    System.out.println((endTime-startTime)/1000+"Ãë");
+	    System.out.println((endTime-startTime)/1000+"ç§’");
 	    System.out.println(y);*/
 		//Calendar cal=Calendar.getInstance();
 		//cal.set(2016, 12, 31, 18, 30);
@@ -72,7 +72,7 @@ public class Test {
 			System.out.println(entry.getKey()+"----"+entry.getValue());
 		}*/
 		Apple a1=new Apple();
-		a1.setColor("ºìÉ«");
+		a1.setColor("é»„è‰²");
 		//a1.setWeight(25);
 		Apple a2=new Apple();
 		Map<String,Object> map=new TreeMap<String,Object>();
