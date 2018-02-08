@@ -18,6 +18,7 @@ public class CheckObjFieldIsNull {
 
 	public static String checkObjFieldIsNull(Object obj) throws IllegalAccessException {
 		String result = "";
+		
 		boolean flag = false;
 		if (obj == null) {
 			flag = true;
