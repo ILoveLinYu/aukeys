@@ -8,6 +8,7 @@ import java.util.stream.Collectors;
 
 import com.aukey.study.Apple;
 import com.aukey.study.utils.BigDecimalUtil;
+import com.aukey.study.utils.Lists;
 
 /**
  * java 1.8 的分组方法
@@ -56,8 +57,20 @@ public class LambdaGroupBy {
 		for(Entry<String,Long> entry:groupMap3.entrySet()){
 			System.out.println("key:"+entry.getKey()+"value:"+entry.getValue());
 		}
-		//list变成map
-		//Map<String,Apple> appleMap=list.stream().collect(Collectors.toMap(Apple::getColor, a ->a));
+		//list变成map(当key重复，使用最后一个value为值)
+		Map<String,Apple> appleMap=list.stream().collect(Collectors.toMap(Apple::getColor,a -> a,(v1,v2) -> v2));
+		for(Entry<String,Apple> entry:appleMap.entrySet()){
+			System.out.println("key:"+entry.getKey()+";value:"+entry.getValue().getColor()+";"+entry.getValue().getWeight());
+			
+		}
+		//list变成map(当key重复，使用list收集)
+		Map<String,List<Apple>> appleListMap=list.stream().collect(Collectors.toMap(Apple::getColor,a -> Lists.newArrayList(a),(List<Apple> oldList,List<Apple> newList) -> {
+			oldList.addAll(newList);
+			return oldList;
+		}));
+		for(Entry<String,List<Apple>> entry:appleListMap.entrySet()){
+			System.out.println("key:"+entry.getKey()+"value:"+entry.getValue().stream().map(Apple::getColor).collect(Collectors.joining(",")));
+		}
 	}
 
 }
